@@ -1,0 +1,2476 @@
+{
+  "name": "历史人物-写实风格-文生图图生视频",
+  "nodes": [
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b34aabd3-afea-4b1f-9118-e8e26810c6d8",
+              "name": "主模型编号",
+              "value": "412b427ddb674b4dbab9e5abd5ae6057",
+              "type": "string"
+            },
+            {
+              "id": "77f73235-58da-411d-bc58-5e56b73b371b",
+              "name": "Lora 编号",
+              "value": "a11be034522a43deaf1c9a0e7fb81f61",
+              "type": "string"
+            },
+            {
+              "id": "cc3a5049-30a3-4c9a-b034-069c47c465b1",
+              "name": "Liblib 提示词示例",
+              "value": "=3d render in ti artstyle of a middle-aged man seated alone in a retro-futuristic mid-century modern apartment during golden hour, evoking the stylized lighting and cinematic staging typical of The Incredibles. The room features clean geometric lines, smooth wooden paneling, and exaggerated parabolic architecture, casting stretched shadows across the floor. The camera is centered in a square 1:1 aspect ratio, focused on the man from the waist up as he sits slightly off-center in a mustard-yellow egg chair with high armrests and textured upholstery.\nThe man wears a tailored olive-green short-sleeve button-down shirt with a wide collar, and large tortoiseshell glasses with thick frames. His silver-streaked dark hair is slicked back with pomade, and his sideburns are precisely trimmed. The sunlight through the apartmentâs large corner window forms a strong horizontal band of orange light across his angular cheekbones and casts long lines over his pressed trousers.\nBehind him, a sleek teak credenza holds a sunburst clock, a sculptural lamp with a glowing orb, and a trio of design magazines slightly fanned out. Shadows from venetian blinds streak across the curved wall and carpet, forming abstract patterns. The ambient light has a rich amber tone, softening the strong art deco color contrasts and giving the image a nostalgic warmth, akin to a film still from a lost 1960s animated noir. The manâs expression is calm, reflective, with a subtle melancholy, matching the fading day.",
+              "type": "string"
+            },
+            {
+              "id": "dfbd3d52-57f6-4e52-aceb-5fbeb8a0e17a",
+              "name": "Liblib 触发词",
+              "value": "3d render in ti artstyle",
+              "type": "string"
+            },
+            {
+              "id": "15f5e355-682b-4d97-8ae5-d1051bf0c2f9",
+              "name": "Fish audio 音色",
+              "value": "d8c7af3779494549a975bdb8015e8a8b",
+              "type": "string"
+            },
+            {
+              "id": "2be7f9aa-6d99-43a8-aaa4-5c11b2fcdbfa",
+              "name": "配乐",
+              "value": "https://storage.googleapis.com/autoaitt/ai/%E6%9C%88%E5%8D%8A%E5%B0%8F%E5%A4%9C%E6%9B%B2.MP3",
+              "type": "string"
+            },
+            {
+              "id": "f05b2083-82af-4b20-80fd-9c10b6acabb8",
+              "name": "Runninghub api key",
+              "value": "e2f7f4c2c2304439929b73dc25fe0ae7",
+              "type": "string"
+            },
+            {
+              "id": "14760cd0-8e7d-4850-bfda-0d247b1bf334",
+              "name": "Fish audio api key",
+              "value": "a4360509b1c04f008814b52619e0d535",
+              "type": "string"
+            },
+            {
+              "id": "ec4a96f3-afc6-4c6b-9da3-fc088b1c42ea",
+              "name": "Liblib AccessKey",
+              "value": "BuEH8bCVGTHZoFuxaimu5A",
+              "type": "string"
+            },
+            {
+              "id": "0e214d75-0026-4755-9728-2d59218c8361",
+              "name": "Liblib SecretKey",
+              "value": "rxyXJeRL0JaK6yvuRR9PSjlQplgqhiD0",
+              "type": "string"
+            },
+            {
+              "id": "1cfa7e04-113a-4a71-8dd6-7ea4c1473fd3",
+              "name": "Fal ai api key",
+              "value": "902438ad-7716-4065-9290-d8245f79cce9:daa85ae7ab1bf8456c7f2cc16f8b59f9",
+              "type": "string"
+            },
+            {
+              "id": "d40489d3-5687-4f2b-bf73-2d88182f39d0",
+              "name": "NCA api key",
+              "value": "g4360509b1c04f008814b52619ec0706",
+              "type": "string"
+            },
+            {
+              "id": "ec1778a6-19cb-44ec-8111-18a9d55e86ec",
+              "name": "NCA url",
+              "value": "https://no-code-architects-toolkit-1092446948801.us-central1.run.app",
+              "type": "string"
+            },
+            {
+              "id": "ea40dac7-caa8-4dea-b4b4-87c2ef226eb9",
+              "name": "Liblib 网址",
+              "value": "https://openapi.liblibai.cloud",
+              "type": "string"
+            },
+            {
+              "id": "7c292ab3-44fb-4259-ba50-2be64646b7fd",
+              "name": "Liblib 生图",
+              "value": "/api/generate/webui/text2img",
+              "type": "string"
+            },
+            {
+              "id": "e38e4e09-5797-45b0-9064-1f85b9c7d7c1",
+              "name": "Liblib 结果",
+              "value": "/api/generate/webui/status",
+              "type": "string"
+            },
+            {
+              "id": "31f6f3a5-ae21-4910-b1ad-633d920131a4",
+              "name": "Timestamp",
+              "value": "={{ Date.now().toString() }}",
+              "type": "string"
+            },
+            {
+              "id": "0340a9a1-92ea-4d1d-87a0-5df84e9e051d",
+              "name": "SignatureNonce",
+              "value": "={{ Math.random().toString(36).slice(2) }}",
+              "type": "string"
+            },
+            {
+              "id": "acdef046-861b-4c17-8a96-5290d9ce0d8a",
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2912,
+        1520
+      ],
+      "id": "d0d9d229-3b9c-4c67-b3a1-f4ee8f4710c0",
+      "name": "设置参数-综合"
+    },
+    {
+      "parameters": {
+        "formTitle": "爆款视频生成器",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "视频文案",
+              "fieldType": "textarea"
+            },
+            {
+              "fieldLabel": "参考视频",
+              "fieldType": "textarea"
+            },
+            {
+              "fieldLabel": "分镜数量",
+              "fieldType": "number"
+            },
+            {
+              "fieldLabel": "视频语言",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "中文"
+                  },
+                  {
+                    "option": "英语"
+                  },
+                  {
+                    "option": "西班牙语"
+                  },
+                  {
+                    "option": "德语"
+                  },
+                  {
+                    "option": "法语"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "视频平台",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Fal"
+                  },
+                  {
+                    "option": "ComfyUI"
+                  },
+                  {
+                    "option": "NCA"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {
+          "appendAttribution": false,
+          "buttonLabel": "创作视频",
+          "path": "ai-video"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -3136,
+        1520
+      ],
+      "id": "dc89cdff-a276-43e1-8125-8fdd717ffc64",
+      "name": "需求输入-视频",
+      "webhookId": "c0f67700-cbb7-442b-b190-bacdeeca1833"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f13ed052-d4e4-4af8-a651-3d76fb737026",
+              "name": "video",
+              "value": "={{ $json.response[0].file_url }}",
+              "type": "string"
+            },
+            {
+              "id": "d4464404-ce50-4c2b-9b1d-befbaca07310",
+              "name": "duration",
+              "value": "={{ $json.response[0].duration }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2480,
+        1120
+      ],
+      "id": "c3c546ad-f864-4b4b-bcb4-697c62e8346a",
+      "name": "设置参数-视频网址"
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "text": "=# **角色**：顶级短视频文案大师 & AI视觉创意总监\n\n你是一位深谙抖音/TikTok爆款密码的**顶级短视频文案大师**，同时也是精通AI绘画的**视觉创意总监**。你拥有敏锐的流量嗅觉和强大的内容创作能力，精通各大头部博主的语言风格特征和视觉表达习惯，能够快速捕捉并完美复刻任何指定博主的表达习惯、节奏感、标志性口头禅以及画面构图风格。你的核心专长是将普通视频文案瞬间转化为极具传播力、吸引力和记忆点的爆款旁白，同时为每句旁白创作匹配的高质量视觉化图片提示词，确保文案与画面的完美融合，让观众欲罢不能地看到最后。\n\n## **信息输入**\n\n- **爆款视频参考片段 (请提供一段具有代表性的爆款视频视频片段或者音频文件以供参考，作为风格模仿的标杆。系统将自动分析其中的语气特点、语速节奏、常用句式、标志性口头禅、表达习惯等特征)\n- **视频文案 (请在此处粘贴您的完整视频文案内容):** \n{{ $('需求输入-视频').item.json['视频文案'] }}\n- **分镜数量:** \n{{ $('需求输入-视频').item.json['分镜数量'] }}个\n- **旁白语言:** \n{{ $('需求输入-视频').item.json['视频语言'] }}\n- **旁白字数策略:**\n    每个分镜旁白字数在4到28字之间动态变化根据内容重要性和情感节奏灵活调节\n- **提示词结构参考示例:**\n{{ $('设置参数-综合').item.json['Liblib 提示词示例'] }}\n- **图片模型触发词:**\n{{ $('设置参数-综合').item.json['Liblib 触发词'] }}\n- **频道身份:** 历史人物\n\n\n## **核心任务**\n基于提供的**视频文案**、**爆款视频参考片段**和**提示词结构参考示例**，为指定**频道身份**量身定制一套完整的抖音/TikTok短视频旁白及对应的视觉化图片提示词。你需要将原始文案智能拆解为符合**分镜数量**要求的精准片段，同时为每个分镜创作匹配的高质量英文图片提示词。在处理过程中，严格按照**旁白字数策略**的要求控制每个分镜旁白的字数，只分割原文案，不做改写，确保视觉内容既保持原文案的核心信息完整性，又具备强烈的个人风格标识和爆款潜质。\n\n## **工作流程**\n\n### **第一步：爆款风格深度解构**\n通过专业的文本风格分析，深度剖析**爆款视频参考片段**中的核心表达元素。提取语言节奏密码（快语速/慢语调的配比规律）、情感表达模式（兴奋点布局、情绪起伏曲线）、画面节奏（分镜画面内容与文案匹配、转换），构建完整的语言与画面匹配节奏风格基因图谱。\n\n### **第二步：内容架构智能重构**\n基于**分镜数量**和短视频黄金观看规律，对**视频文案**实施精密化分割策略。运用信息密度分析技术，识别文案中的高价值信息点、关键转折节点和情感爆发点，按照\"开场吸引→内容展开→高潮冲突→价值输出→结尾升华\"的经典节奏，根据文案实际内容量与**分镜数量**的匹配关系，进行智能化的内容分割处理：确保每个分镜的信息密度完美匹配**旁白字数策略**的要求，同时保证每个分镜都具备独立的完整性和强烈的承接性。\n\n### **第三步：旁白字数策略执行**\n- 根据文案长度和分镜数量动态处理，精心设计的字数变化实现抑扬顿挫的视频节奏\n- 每个分镜旁白严格控制在4-28字之间（不含标点符号），尽量保证分镜旁白内容的相对完整性，不要分割单个完整句子（除非这个单个句子超过28字）\n- 根据内容重要性、情感强度、信息复杂度灵活调节字数，确保最佳传播效果\n- 确保信息密度适中，语言精炼有力\n- 保持节奏稳定，便于配音和观看体验\n\n### **第四步：爆款密码深度注入**\n基于抖音/TikTok平台的流量算法偏好和用户心理行为模式，开头第一个分镜画面设置强力画面吸引钩子，如果原文案分割的第一个分镜旁白内容无实际故事画面，可结合整体故事内容提取核心人物或场景作为第一分镜画面。\n\n### **第五步：视觉提示词精密构建**\n严格遵循**提示词结构参考示例**的格式规范和画面风格，为每个分镜的旁白内容创作匹配的英文图片提示词。**重要原则：每个分镜的图片提示词必须完整独立地描述一个完整的画面场景，因为每个提示词将单独用于生成一张独立的图片。** 每个提示词需要包含完整的画面构成要素：主体元素的完整描述（人物、物体、概念等的外观特征、状态、表情、姿态）、环境场景的详细设定（背景、环境、道具、氛围）、具体动作或状态描述、光线条件和视觉风格。确保每个提示词都是一个自包含的完整画面描述，能够独立生成一张符合旁白内容的高质量图片，避免依赖前后分镜的信息补充。\n如果是名人，务必直接使用人名，不需要描述其外貌长相（即大家都熟知的固有外貌特征），只需要描述其可变特征：比如衣服、年龄、状态、表情、姿态等。\n\n**关键技巧-独立画面完整性设计：** 由于每个分镜的图片提示词将独立生成图片，必须确保每个提示词都包含完整的画面信息。具体要求：\n- **主体元素完整描述：** 每个提示词都需要重新完整描述画面主体，如果是人物则包括外貌特征、年龄、性别、发型、服装、表情、姿态等信息；如果是物体或场景则包括其详细特征、材质、状态等信息；如果是抽象概念则通过具象化方式进行视觉描述\n- **环境场景独立设定：** 每个提示词都需要独立描述完整的背景环境、场景设定、道具物品、空间布局等环境要素\n- **动作状态自包含：** 每个提示词描述的主体动作或状态必须是完整的、可理解的，不依赖其他分镜的信息\n- **视觉风格重复确认：** 每个提示词都需要重新强调画面的整体风格、色调、构图方式、光线效果等视觉特征\n- **故事内容独立表达：** 每个提示词描述的画面必须能够独立传达该分镜旁白的核心内容，形成完整的视觉信息\n\n**主体一致性保证：** 当视频中涉及同一主要元素时，必须在每个相关分镜的图片提示词中保持该元素特征的高度一致性：\n- **人物一致性：** 当涉及人物主体时，为主要角色建立标准的外貌描述模板，包括年龄段、性别、面部特征、发型、发色、眼睛颜色、肤色、身材特征等核心识别要素，并在每个相关分镜提示词中完全重复使用相同的描述\n- **物体一致性：** 当涉及重要物体时，确保其外观特征、颜色、材质、形状等关键属性在不同分镜中保持一致\n- **场景一致性：** 当在同一场景中展开时，确保环境的基本特征、风格、色调保持统一\n- **服装风格统一：** 如涉及人物，确保同一角色在不同分镜中的服装风格保持一致，如果有变化需要符合剧情逻辑\n- **表情姿态连贯：** 虽然表情和姿态可以根据分镜内容调整，但需要保持角色或主体的基本气质和特征一致\n- **标识特征强化：** 重点强调主体的标志性特征（如人物的特殊发型、眼镜、配饰，或物体的独特纹理、标识等），在每个相关分镜中都要明确描述\n- **描述顺序统一：** 在每个分镜提示词中按照相同的顺序描述主体特征，确保AI模型能够更好地理解和保持一致性\n\n### **第六步：专业标准全面校验**\n实施多维度质量检验体系，确保最终输出达到专业标准。严格核查分镜数量与要求完全一致，逐句检查旁白字数是否符合**旁白字数策略**的要求，并确保每句旁白都具备强烈的传播力和抓人注意力的能力。重点关注信息完整性，确保原视频文案的核心信息在转化过程中不丢失。评估整体风格一致性、语言表达流畅度及分镜间的逻辑连贯性，保证内容过渡自然、观看体验顺畅。测试每句旁白的传播力指数和观看完成度潜力，确认信息传达的准确性和完整性。同时，逐条验证图片提示词的完整性、准确性和可执行性，**特别确认每个图片提示词都是完整独立的画面描述，能够单独生成一张完整的图片。** 检查每个提示词是否包含了主体、环境场景、动作状态、视觉风格等所有必要元素，确保提示词与对应旁白内容高度匹配，能够清晰表达画面的完整视觉信息。**重点检查人物一致性：** 验证同一角色在不同分镜中的外貌描述是否完全一致，确保所有分镜的人物特征描述使用相同的标准模板，避免因描述差异导致的人物形象不一致问题。最终输出需全面满足爆款标准，呈现优质旁白内容与高匹配度、高独立性、高一致性的视觉化提示词。\n\n## **输出规范**\n\n### **格式要求**\n- **标准结构:** 严格按照JSON格式输出，确保结构化数据的准确性和可读性\n- **字段规范:** JSON对象包含`分镜`键，对应数组中每个对象含`分镜序号`(整数)、`旁白内容`(字符串)、`旁白字数`(字符串)和`图片提示词`(字符串)四个字段\n- **分镜数量控制:** 严格按照**信息输入**中的**分镜数量**要求生成对应数量的分镜内容，确保输出的分镜序号从1开始连续递增至指定数量，不多不少\n\n### **内容约束**\n- **旁白字数差异化要求:** 根据**旁白字数策略**执行差异化处理，严格按照字数要求输出：\n\t每条`旁白内容`字数在4到28字之间动态变化，根据内容重要性、情感节奏、信息密度灵活调节，确保最佳传播效果和观看体验\n- **语言标准:** 旁白统一使用**信息输入**中指定的**旁白语言**进行创作，图片提示词使用英文\n- **风格一致性:** 所有分镜旁白必须保持爆款视频参考片段语言风格的高度一致性，所有图片提示词必须保持**提示词结构参考示例**画面风格的高度一致性\n- **提示词独立性要求:** 每个图片提示词必须是完整独立的画面描述，包含主体人物的完整特征描述、环境场景的详细设定、具体动作或状态、视觉风格等所有必要元素，确保能够单独生成一张完整的图片，不依赖其他分镜的信息补充\n- **人物一致性强制要求:** 当视频涉及同一主要角色时，必须在每个分镜的图片提示词中使用完全相同的人物外貌描述，包括年龄、性别、面部特征、发型、发色、眼睛、肤色、身材等所有识别要素。确保同一角色在所有分镜中的视觉形象保持高度一致，避免因描述差异导致的人物形象变化\n- **添加触发词:** 注意在每个分镜英文图片提示词的开始添加信息输入中的图片模型触发词，以确保图片正常生成。\n- **安全政策合规:** 图片提示词需要严格符合Liblib AI安全政策要求，避免出现任何违禁关键词和敏感内容，包括但不限于暴力、色情、血腥、恐怖、政治敏感、种族歧视等内容。所有图片提示词必须积极正面，确保生成的视觉内容健康、安全、符合平台规范，适合全年龄段观看。\n\n### **输出示例**\n```json\n{\n  \"分镜\": [\n    {\n      \"分镜序号\": 1,\n      \"旁白内容\": \"每个分镜旁白字数在4到28字之间动态变化根据内容重要性和情感节奏灵活调节\",\n      \"旁白字数\": \"<该分镜旁白字数>\",\n      \"图片提示词\": \"<第1分镜对应的英文图片提示词>\"\n    },\n    {\n      \"分镜序号\": 2,\n      \"旁白内容\": \"每个分镜旁白字数在4到28字之间动态变化根据内容重要性和情感节奏灵活调节\",\n      \"旁白字数\": \"<该分镜旁白字数>\",\n      \"图片提示词\": \"<第2分镜对应的英文图片提示词>\"\n    },\n    {\n      \"分镜序号\": 3,\n      \"旁白内容\": \"每个分镜旁白字数在4到28字之间动态变化根据内容重要性和情感节奏灵活调节\",\n      \"旁白字数\": \"<该分镜旁白字数>\",\n      \"图片提示词\": \"<第3分镜对应的英文图片提示词>\"\n    },\n    {\n      \"分镜序号\": 4,\n      \"旁白内容\": \"每个分镜旁白字数在4到28字之间动态变化根据内容重要性和情感节奏灵活调节\",\n      \"旁白字数\": \"<该分镜旁白字数>\",\n      \"图片提示词\": \"<第4分镜对应的英文图片提示词>\"\n    }\n  ]\n}\n```",
+        "videoUrls": "={{ $('需求输入-视频').item.json['参考视频'] }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2688,
+        1520
+      ],
+      "id": "ec34c171-407e-4c80-a246-1495b39b34e2",
+      "name": "分镜大纲",
+      "retryOnFail": true,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "hKbyBjJv3YkcGmeG",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b40e171c-a892-4f47-8429-ccd9b0f8f2f1",
+              "name": "分镜大纲",
+              "value": "={{ (() => {\n  const raw = $node[\"分镜大纲\"].json.content.parts[0].text || '';\n  const match = raw.match(/```json\\s*([\\s\\S]*?)\\s*```/i);\n  return match ? JSON.parse(match[1]) : {};\n})() }}",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2464,
+        1520
+      ],
+      "id": "4aba7daa-0adb-4270-aa1d-9a929390f7a0",
+      "name": "设置参数-提取分镜"
+    },
+    {
+      "parameters": {
+        "operation": "uploadFile",
+        "resource_type_file": "raw",
+        "additionalFieldsFile": {
+          "public_id": "={{ $workflow.id }}{{ $execution.id }}-voice{{ $('遍历-图片').item.json['分镜序号'] }}.mp3"
+        }
+      },
+      "type": "n8n-nodes-cloudinary.cloudinary",
+      "typeVersion": 1,
+      "position": [
+        -1536,
+        1536
+      ],
+      "id": "b968a07e-4711-460c-b3ab-f54479bbb1c0",
+      "name": "上传 mp3",
+      "credentials": {
+        "cloudinaryApi": {
+          "id": "rXu7iGZAm6I6dQ6T",
+          "name": "Cloudinary account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.fish.audio/v1/tts",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('设置参数-综合').first().json['Fish audio api key'] }}"
+            },
+            {
+              "name": "model",
+              "value": "speech-1.6"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": {{ JSON.stringify($('遍历-图片').item.json['旁白内容']) }},\n  \"temperature\": 0.7,\n  \"top_p\": 0.7,\n  \"normalize\": false,\n  \"format\": \"mp3\",\n  \"mp3_bitrate\": 128,\n  \"reference_id\": \"{{ $('设置参数-综合').first().json['Fish audio 音色'] }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1760,
+        1536
+      ],
+      "id": "311a5a6b-5bd4-4f2e-aefe-531c1860ba4b",
+      "name": "声音生成",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/media/metadata",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"media_url\":\"{{ $json.url }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1216,
+        1520
+      ],
+      "id": "4a9272cf-0f55-457b-b82d-67168194b897",
+      "name": "声音时长",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/ffmpeg/compose",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"inputs\": [\n    {\n      \"file_url\": \"{{ $('汇聚').item.json.video }}\" \n    },\n    {\n      \"file_url\": \"{{ $('循环-分镜').item.json.audioUrl }}\"\n    }\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"{{ $('设置-filterString').item.json.filterString }}\"\n    }\n  ],\n  \"outputs\": [\n    {\n      \"options\": [\n        { \"option\": \"-map\", \"argument\": \"[v_out]\" },\n        { \"option\": \"-map\", \"argument\": \"[a_out]\" },\n        { \"option\": \"-c:v\", \"argument\": \"libx264\" },\n        { \"option\": \"-preset\", \"argument\": \"fast\" },\n        { \"option\": \"-crf\", \"argument\": \"23\" },\n        { \"option\": \"-c:a\", \"argument\": \"aac\" },\n        { \"option\": \"-shortest\" }\n      ]\n    }\n  ],\n  \"metadata\": {\n    \"duration\": true,\n    \"filesize\": true,\n    \"thumbnail\": true\n  }\n}\n    ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2176,
+        1104
+      ],
+      "id": "fdf9b9d8-85fa-464c-9f36-41336fb6d9fb",
+      "name": "声音视频合成",
+      "retryOnFail": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7a986dff-b3ab-43cb-b7d7-df2f6e88e5a8",
+              "name": "声音视频比值",
+              "value": "={{\n  (\n    Number($('循环-分镜').item.json.duration) /\n    Number($json.duration)\n  ).toFixed(2)\n}}",
+              "type": "number"
+            },
+            {
+              "id": "eae2035c-422a-4513-b889-920993c1e71a",
+              "name": "视频声音比值",
+              "value": "={{ \n  (\n   Number($json.duration) /    \n   Number($('循环-分镜').item.json.duration)                                     \n  ).toFixed(2)                                                   \n}}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1600,
+        768
+      ],
+      "id": "6e5d2dbb-5c35-4a8c-be4b-ee68f75f6646",
+      "name": "视频声音比值"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "respondWith": "showText",
+        "responseText": "=<pre>\n视频地址如下：\n\n{{ $('上传 Cloudinary-完整').item.json.url}}\n\n</pre>",
+        "limitWaitTime": true,
+        "resumeUnit": "minutes"
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        880,
+        96
+      ],
+      "id": "1f4c852f-842d-4051-aab2-498048862bbf",
+      "name": "返回数据-正常",
+      "webhookId": "7d93dca2-ee69-4975-bea4-8158289e40e9"
+    },
+    {
+      "parameters": {
+        "url": "={{ $('配乐合成-裁剪').item.json.response[0].file_url }}",
+        "resource_type": "video",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-cloudinary.cloudinary",
+      "typeVersion": 1,
+      "position": [
+        432,
+        96
+      ],
+      "id": "c71c8eda-1b6c-4ab0-a0eb-72f2d1fda9bd",
+      "name": "上传 Cloudinary-完整",
+      "credentials": {
+        "cloudinaryApi": {
+          "id": "rXu7iGZAm6I6dQ6T",
+          "name": "Cloudinary account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -912,
+        112
+      ],
+      "id": "76dcce7a-4487-46ea-9f00-f083674e16ea",
+      "name": "聚合"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/ffmpeg/compose",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"id\": \"video-audio-trim-to-narration\",\n  \"inputs\": [\n    {\n      \"file_url\": \"{{ $json.response.response.response[0].file_url }}\"\n    },\n    {\n      \"file_url\": \"{{ $('设置参数-综合').last().json['配乐'] }}\"\n    }\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"[0:a]pan=stereo|c0=c0|c1=c0[a_main];[1:a]volume=-15dB,afade=t=out:st={{ (parseFloat($json.response.response.response[0].duration) - 5).toFixed(3) }}:d=5[faded_bgm];[a_main][faded_bgm]amix=inputs=2:duration=first:normalize=false:weights='1 1'[aout]\"\n    }\n  ],\n  \"outputs\": [\n    {\n      \"options\": [\n        {\n          \"option\": \"-map\",\n          \"argument\": \"0:v:0\"\n        },\n        {\n          \"option\": \"-map\",\n          \"argument\": \"[aout]\"\n        },\n        {\n          \"option\": \"-c:v\",\n          \"argument\": \"copy\"\n        },\n        {\n          \"option\": \"-c:a\",\n          \"argument\": \"aac\"\n        }\n      ]\n    }\n  ],\n  \"metadata\": {\n    \"duration\": true,\n    \"thumbnail\": true\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        96
+      ],
+      "id": "d5d8e5db-af50-4b06-b043-906c8f8c2fe1",
+      "name": "配乐合成-裁剪"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6c26eb1f-3769-4c35-a3bc-b20db9dc6b55",
+              "name": "首帧",
+              "value": "={{ $('获取图片-ComfyUI').item.json.data[0].fileUrl }}",
+              "type": "string"
+            },
+            {
+              "id": "20cc1e28-1c61-4091-994a-feaf8ef5b63e",
+              "name": "尾帧",
+              "value": "=",
+              "type": "string"
+            },
+            {
+              "id": "fe259a64-96d2-457f-80a0-4870550d66cb",
+              "name": "声音",
+              "value": "={{ $('上传 mp3').item.json.url }}",
+              "type": "string"
+            },
+            {
+              "id": "ee342e1d-bfc8-4e61-959d-4be87847c344",
+              "name": "声音时长",
+              "value": "={{ $('声音时长').item.json.response.duration }}",
+              "type": "string"
+            },
+            {
+              "id": "98fc8b45-58c7-46fa-ba8f-5ecb95752ec4",
+              "name": "旁白",
+              "value": "={{ $('遍历-图片').item.json['旁白内容'] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        32,
+        1616
+      ],
+      "id": "2055fbed-d5bd-40b1-91f3-ce982d3e80f0",
+      "name": "设置参数 -保存内容"
+    },
+    {
+      "parameters": {
+        "jsCode": "/**\n * Function 节点：Run Once for *All* items\n * 作用：汇聚现有数据生成 clips[]\n * 规则调整：允许“只有首帧”的情况；若无尾帧则输出为空字符串\n */\n\nconst clips = items.reduce((arr, item, idx) => {\n  const j = item.json ?? {};\n\n  const firstFrame = String(j['首帧'] ?? '').trim();\n  const lastFrame  = String(j['尾帧'] ?? '').trim();   // 可为空\n  const audioUrl   = String(j['声音'] ?? '').trim();\n  const narration  = String(j['旁白'] ?? '').trim();   // 必填\n  const duration   = Number(j['声音时长'] ?? 0);       // 原始小数\n\n  // 必填校验：首帧 / 声音 / 旁白\n  if (!firstFrame || !audioUrl || !narration) {\n    console.warn(`❗ 第 ${idx + 1} 条缺必填字段（首帧/声音/旁白），已忽略`);\n    return arr;\n  }\n\n  // 若无尾帧，按需求输出为空字符串\n  const safeLast = lastFrame || '';\n\n  if (!lastFrame) {\n    console.warn(`ℹ️ 第 ${idx + 1} 条仅有首帧，尾帧将输出为空字符串`);\n  }\n\n  arr.push({\n    seq        : idx + 1,   // 顺序编号；如有“分镜序号”可改用\n    firstFrame,\n    lastFrame  : safeLast,\n    audioUrl,\n    duration,\n    narration,\n  });\n\n  return arr;\n}, []);\n\n// 如需按分镜序号排序，取消下一行注释\n// clips.sort((a, b) => a.seq - b.seq);\n\nreturn [{ json: { clips } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1728,
+        752
+      ],
+      "id": "ff079d9d-a0c4-47e2-a2f9-19ed7e7eb4b0",
+      "name": "处理合并"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "clips",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1536,
+        752
+      ],
+      "id": "1d6c9a7b-4bec-4f22-8c04-51dec7bec687",
+      "name": "遍历-分镜"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "['分镜大纲']['分镜']",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -2240,
+        1520
+      ],
+      "id": "6aa60258-f17a-47ea-827c-ebd3c944cfa7",
+      "name": "遍历-图片"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -1296,
+        752
+      ],
+      "id": "0e4bb0c1-6b17-469a-99bb-75012c196153",
+      "name": "循环-分镜"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -2000,
+        1520
+      ],
+      "id": "93c7b5c8-1601-41ca-bb27-3bd97d2b76d8",
+      "name": "循环-图片"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -240,
+        480
+      ],
+      "id": "e0724fc5-0a72-45bd-abf7-305ca2a16a0e",
+      "name": "等待-Fal",
+      "webhookId": "82893e82-e83f-471d-8452-963138492337"
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Fal').item.json.response_url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Key {{ $('设置参数-综合').first().json['Fal ai api key'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        480
+      ],
+      "id": "837f2fe9-c372-4fe8-a783-858f25e78aec",
+      "name": "获取视频-Fal",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "43ed5f2c-d40d-4a8e-9d8a-2ae2a95ffaa3",
+              "leftValue": "={{$json.video.url}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        480
+      ],
+      "id": "7c57fe9e-a184-4f29-8577-accee2a5ed2c",
+      "name": "判断-Fal"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "27893bfc-4d2a-80cf-8ff3-d838135e9c8a",
+          "mode": "list",
+          "cachedResultName": "AIIMAGESVIDEO",
+          "cachedResultUrl": "https://www.notion.so/27893bfc4d2a80cf8ff3d838135e9c8a"
+        },
+        "title": "={{ $workflow.id }}-{{ $execution.id }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "视频链接|url",
+              "urlValue": "={{ $json.url }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        656,
+        96
+      ],
+      "id": "8db3344e-6193-4180-a661-dbb59f3dd855",
+      "name": "保存视频",
+      "credentials": {
+        "notionApi": {
+          "id": "CVyi8ehixVyYpTVS",
+          "name": "Notion account 1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.runninghub.cn/task/openapi/create",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Host",
+              "value": "www.runninghub.cn"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"apiKey\": \"{{ $('设置参数-综合').first().json['Runninghub api key'] }}\",\n  \"workflowId\": \"1950150331004010497\",\n  \"instanceType\": \"plus\",\n  \"nodeInfoList\": [\n    {\n      \"nodeId\": \"113\",\n      \"fieldName\": \"select\",\n      \"fieldValue\": 2\n    },\n    {\n      \"nodeId\": \"153\",\n      \"fieldName\": \"select\",\n      \"fieldValue\": 2\n    },\n    {\n      \"nodeId\": \"247\",\n      \"fieldName\": \"select\",\n      \"fieldValue\": 4\n    },\n    {\n      \"nodeId\": \"272\",\n      \"fieldName\": \"index\",\n      \"fieldValue\": 2\n    },\n    {\n      \"nodeId\": \"107\",\n      \"fieldName\": \"value\",\n      \"fieldValue\": {{ Math.min(8, Math.max(2, Math.round(+$('遍历-分镜').item.json.duration))) }}\n    },\n    {\n      \"nodeId\": \"135\",\n      \"fieldName\": \"image\",\n      \"fieldValue\": \"{{ $('遍历-分镜').item.json.firstFrame }}\"\n    },\n    {\n      \"nodeId\": \"116\",\n      \"fieldName\": \"text\",\n      \"fieldValue\": {{ JSON.stringify(\n        ($node[\"视频提示词-ComfyUI\"].json.content?.parts?.[0]?.text || '')\n          .replace(/[\\s\\S]*?<prompt_en>/, '')\n          .replace(/<\\/prompt_en>[\\s\\S]*/, '')\n          .trim()\n      ) }}\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -208,
+        768
+      ],
+      "id": "64147833-a5f6-4092-a47d-7784559d3f83",
+      "name": "ComfyUI",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.runninghub.cn/task/openapi/outputs",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Host",
+              "value": "www.runninghub.cn"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "apiKey",
+              "value": "={{ $('设置参数-综合').first().json['Runninghub api key'] }}"
+            },
+            {
+              "name": "taskId",
+              "value": "={{ $('ComfyUI').last().json.data.taskId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        256,
+        768
+      ],
+      "id": "07f234a9-c85e-474a-8a25-1cbf37106fb8",
+      "name": "获取视频-ComfyUI",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        48,
+        768
+      ],
+      "id": "3f099f66-9d1d-4b4b-972c-05fcbadbefca",
+      "name": "等待-ComfyUI",
+      "webhookId": "72a15c74-2ec7-4ea3-a631-a7a0c46fe312"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1328,
+        752
+      ],
+      "id": "209fed4f-d68c-4a3e-9aa2-50151c7ed2fe",
+      "name": "汇聚"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('需求输入-视频').first().json['视频平台'] }}",
+                    "rightValue": "Fal",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "f0bae2d2-397b-4c9e-b550-2fa2c3d90401"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Fal"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7b92248c-35f5-4e68-a933-e0d52f48d70d",
+                    "leftValue": "={{ $('需求输入-视频').first().json['视频平台'] }}",
+                    "rightValue": "ComfyUI",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "ComfyUI"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "2ed7c9c3-47f4-428d-a170-3c30d4a1dabd",
+                    "leftValue": "={{ $('需求输入-视频').first().json['视频平台'] }}",
+                    "rightValue": "NCA",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "NCA"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -1120,
+        752
+      ],
+      "id": "f8d5098c-a759-47dc-8ba2-2a2fcd58f32a",
+      "name": "路由"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8012306f-bcfa-471d-b019-646621d1cf4d",
+              "name": "video",
+              "value": "={{ $('判断-Fal').item.json.video.url }}",
+              "type": "string"
+            },
+            {
+              "id": "576d5d2e-9c20-44df-85a8-f0d7924cf6ab",
+              "name": "duration",
+              "value": "={{ Math.min(12, Math.max(3, Math.round(+$('遍历-分镜').item.json.duration))) }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        448,
+        464
+      ],
+      "id": "b2ef2925-1187-4790-a734-4114ead087d8",
+      "name": "设置参数-Fal"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8012306f-bcfa-471d-b019-646621d1cf4d",
+              "name": "video",
+              "value": "={{ $('获取视频-ComfyUI').item.json.data[0].fileUrl }}",
+              "type": "string"
+            },
+            {
+              "id": "5b2503c3-7086-4668-a7a4-aa03d5f8bac2",
+              "name": "duration",
+              "value": "={{ Math.min(8, Math.max(2, Math.round(+$('遍历-分镜').item.json.duration))) }}",
+              "type": "number"
+            },
+            {
+              "id": "74d97eff-a472-40ae-9c04-20abcea89920",
+              "name": "fps",
+              "value": "={{ $json.response.fps }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        928,
+        768
+      ],
+      "id": "a5f4d0a7-8d2b-4127-a2f2-ff3b82eadfe2",
+      "name": "设置参数-ComfyUI"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://queue.fal.run/fal-ai/bytedance/seedance/v1/lite/image-to-video",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Key {{ $('设置参数-综合').first().json['Fal ai api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n     \"prompt\": {{ JSON.stringify(\n  ($node[\"视频提示词-Fal\"].json.content?.parts?.[0]?.text || '')\n    .replace(/[\\s\\S]*?<prompt_en>/, '')      \n    .replace(/<\\/prompt_en>[\\s\\S]*/, '')    \n    .trim()\n) }},\n     \"resolution\": \"720p\",\n     \"duration\": \"{{ Math.min(12, Math.max(3, Math.round(+$('遍历-分镜').item.json.duration))) }}\",\n     \"image_url\": \"{{ $('遍历-分镜').item.json.firstFrame }}\"\n}",
+        "options": {
+          "response": {}
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -464,
+        480
+      ],
+      "id": "6c8cf8b7-c2b8-4575-9785-9e8d5240d1ee",
+      "name": "Fal",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// 工具函数\nconst toNum = (v) => {\n  const n = Number(v);\n  return Number.isFinite(n) ? n : NaN;\n};\n\n// 读取输入\nconst all = $input.all();\nif (!all.length) throw new Error('No input items received.');\n\nconst root = all[0].json ?? {};\nconst rawList = Array.isArray(root.data)\n  ? root.data\n  : all.map(i => i.json).filter(Boolean);\n\n// 规范化并过滤有效片段\nlet skipped = 0;\nconst clips = rawList.reduce((arr, j, idx) => {\n  if (j?.error || (typeof j?.code === 'number' && j.code !== 0)) {\n    console.warn(`skip [${idx}] because of error/code:`, j.code || 'error');\n    skipped++; return arr;\n  }\n\n  const url = String(j?.video || j?.file_url || '').trim();\n  // 我们不再需要duration，因为我们要使用文件的全部内容\n  if (!url) { skipped++; return arr; }\n\n  arr.push({ url, ss: j?.ss }); // 只保留我们需要的信息\n  return arr;\n}, []);\n\nif (clips.length < 2) {\n  throw new Error(`Need at least 2 valid clips after filtering; got ${clips.length}, skipped ${skipped}.`);\n}\n\n// 构建 inputs\nconst inputs = [];\nclips.forEach((it) => {\n  const opts = [];\n  if (it.ss !== undefined && it.ss !== null && it.ss !== '') {\n    const v = toNum(it.ss);\n    if (Number.isFinite(v)) opts.push({ option: '-ss', argument: v });\n  }\n  // 【修正】删除了画蛇添足的 -t 选项，确保使用每个文件的完整内容\n  inputs.push({ file_url: it.url, options: opts });\n});\n\n// ── 滤镜：为每个流重置时间戳，然后 concat ──\nconst filters = [];\nconst vLabels = [];\nconst aLabels = [];\n\nfor (let i = 0; i < inputs.length; i++) {\n  const vOut = `[v${i}]`;\n  vLabels.push(vOut);\n  filters.push({ filter: `[${i}:v]format=yuv420p,setpts=PTS-STARTPTS${vOut}` });\n\n  // 【修正】为音频流也添加时间戳重置，这是最稳健的做法\n  const aOut = `[a${i}]`;\n  aLabels.push(aOut);\n  filters.push({ filter: `[${i}:a]asetpts=PTS-STARTPTS${aOut}` });\n}\n\n// 串接视频\nfilters.push({ filter: `${vLabels.join('')}concat=n=${inputs.length}:v=1:a=0[v]` });\n\n// 串接音频\nfilters.push({ filter: `${aLabels.join('')}concat=n=${inputs.length}:v=0:a=1[a]` });\n\n// 输出与全局参数\nconst outputs = [{\n  options: [\n    { option: '-map', argument: '[v]' },\n    { option: '-map', argument: '[a]' },\n    { option: '-c:v', argument: 'libx264' },\n    { option: '-preset', argument: 'medium' },\n    { option: '-crf', argument: '23' },\n    { option: '-c:a', argument: 'aac' },\n    { option: '-pix_fmt', argument: 'yuv420p' }\n  ]\n}];\n\nconst global_options = [{ option: '-y' }];\nconst metadata = { thumbnail: true, filesize: true, duration: true, bitrate: true, encoder: true };\n\nconst finalPayload = {\n  inputs,\n  filters,\n  outputs,\n  global_options,\n  metadata,\n  webhook_url: 'https://www.google.com',\n  id: 'n8n-job-final-concat-' + Date.now()\n};\n\nreturn [{ json: { requestBodyString: JSON.stringify(finalPayload) } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -688,
+        112
+      ],
+      "id": "ec4b0c34-195b-409c-8e75-89970cad6137",
+      "name": "视频网址处理"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/ffmpeg/compose",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.requestBodyString }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -464,
+        112
+      ],
+      "id": "2f5f6529-7b61-4bab-a3d4-d9274352572a",
+      "name": "视频拼接"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "1bd32662-74ef-4c9f-84fa-6d6687056da3",
+              "leftValue": "={{ $json.response.job_status }}",
+              "rightValue": "done",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -32,
+        112
+      ],
+      "id": "436be627-48c0-4169-bbba-625741c05ecc",
+      "name": "状态判断"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/toolkit/job/status",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"job_id\": \"{{ $('视频拼接').item.json.job_id}}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -240,
+        112
+      ],
+      "id": "962532bd-6a11-41f7-95aa-1553a9b4c20c",
+      "name": "状态查询",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        128,
+        240
+      ],
+      "id": "a32dff98-d5b2-4dd7-97da-61e2defd30fa",
+      "name": "等待",
+      "webhookId": "fc70f38e-3d62-48e8-a255-db3e67ad736b"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "text": "=# **角色 (Role)：**顶级AI视频生成提示词专家 & 视觉叙事导演\n\n你是一名顶级视觉叙事导演与AI视频提示词专家。你的任务是深入解读用户提供的静态图片，以精准构思并创作高度优化的英文视频提示词。这些提示词专为最新的AI图片生成视频模型设计（如 Bytedance Seedance 1.0 OpenAI Sora、Runway、Pika Labs、Luma AI、Kling、Google Veo 等），用于指导生成3-12秒动态流畅的视频。你拥有敏锐的视觉分析能力、精湛的动态设计技巧和丰富的AI视频生成经验，能够将静态图片转化为具有强烈视觉冲击力和情感感染力的动态视频。\n\n## **核心目标 (Core Objectives)**\n\n输出精炼且高质量的英文视频提示词，以精准控制动态效果，确保视频流畅自然，与输入图片的视觉风格完美融合，避免任何不自然的扭曲或突兀感。通过专业的动态设计和镜头语言，在3-12秒内创造出引人入胜的视觉叙事体验。\n\n## **信息输入 (Input Information)**\n\n- **首帧图片 (Starting Frame Image):** \n  `[提供首帧图片，作为视频动态生成的起始画面]`\n\n- **当前分镜旁白内容 (Current Scene Narration Content):** \n  `{{ $json.narration }}`\n\n- **完整视频大纲、旁白、生成图片的提示词 (Complete Video Outline):** \n  `{{ $('分镜大纲').last().json.content.parts[0].text }}`\n\n\n## **专业制作流程 (Professional Production Workflow)**\n\n### **第一步：整体基调分析 (Overall Tone Analysis)**\n深度解析完整视频大纲的内容主题、情感内核、表达风格和语言特色，确定整个视频的基调氛围和视觉风格导向，为当前分镜的视觉设计奠定统一的风格基础。\n\n### **第二步：首帧图片深度解析 (Deep Frame Analysis)**\n基于生成图片的提示词和整体基调，全面解构首帧图片的视觉元素和动态潜力。细致分析当前分镜旁白内容的情感内核、语言节奏和表达重点，确定最具传播力的动态呈现策略。\n\n### **第三步：动态发展设计 (Dynamic Development Design)**\n基于整体基调和首帧解析结果，精心设计最具冲击力和记忆点的动态发展方案。根据分镜旁白情感曲线设计动态节奏，匹配关键词汇与对应视觉动作，确保音画同步的完美呈现。\n\n### **第四步：提示词元素构建 (Prompt Elements Construction)**\n按照最佳实践原则和专业推荐顺序逐步构建提示词元素，确保每个元素都符合精炼直接、聚焦动态的要求：\n\n#### **主体运动 (Subject Motion) - 优先级1**\n- **精炼直接原则**：清晰描述图片中主体的动作、姿态或表情变化，使用简洁明了的英文表达\n- **肯定式指令**：使用积极、明确的描述，如 \"remains still\" 而非 \"does not move\"\n- **明确指称主体**：使用 \"the subject\", \"the figure in the foreground\", \"it\", \"he/she\" 等精准指代\n- **多主体处理**：使用空间位置或显著特征进行区分\n  - 示例：\"The subject on the left walks forward, while the subject on the right remains still.\"\n  - 示例：\"The woman in the red dress nods; the man beside her waves.\"\n\n#### **场景运动 (Scene Motion) - 优先级2**\n- **聚焦动态原则**：明确描述环境的动作与变化，避免静态重复\n- **简化句法**：避免长句和复杂从句结构，保持表达简洁\n- **隐性驱动（推荐）**：暗示环境变化\n  - 示例：\"The subject runs through a dusty desert.\"\n- **显性指令**：明确描述环境变化\n  - 示例：\"The subject runs through the desert, dust kicking up behind them.\"\n\n#### **镜头运动 (Camera Motion) - 优先级3**\n- **非对话指令**：直接陈述所需动态，避免口语请求\n- **明确虚拟摄像机的运动方式与轨迹**：static shot, handheld camera, dolly zoom, pan, tracking shot, follow subject, focus pull\n- 确保镜头运动与主体动作和场景变化协调统一\n\n#### **风格描述 (Style Descriptors) - 优先级4**\n- **迭代优化原则**：从简单动作开始，逐步增加复杂元素进行验证优化\n- **运动速率**：slow motion, fast-paced, time-lapse\n- **动态质感**：live-action realism, smooth animation, stop-motion, hyperrealistic\n\n### **第五步：最佳实践整合验证 (Best Practices Integration & Validation)**\n- **精炼直接检查**：确保使用英文、语言简洁明了，避免歧义\n- **聚焦动态验证**：检查是否明确描述动作与变化，避免静态重复\n- **肯定式指令确认**：确保用积极、明确的描述，避免负面指令\n- **简化句法优化**：避免长句和复杂的从句结构\n- **非对话指令核查**：直接陈述所需动态，避免口语请求\n- **迭代优化准备**：为后续优化留出调整空间\n\n确保每个元素都与分镜旁白内容和整体视频风格保持完美一致，通过渐进式构建和最佳实践验证达到最佳动态效果。\n\n## **输出规范 (Final Output Specifications)**\n**输出要求：**\n- **字数控制**：提示词严格限制在100词以内，确保简洁高效\n- **完整性保证**：确保提示词独立完整，可直接应用于顶级AI视频生成模型\n- **表达质量**：描述精准凝练，富有强烈的视觉冲击力和表现张力\n- **安全合规性**：提示词必须严格遵循Liblib AI安全政策，确保内容健康正面，杜绝任何违禁元素，包括但不限于暴力、色情、血腥、恐怖、政治敏感、种族歧视等内容，适合全年龄段观看\n请将精心设计的英文视频提示词严格置于 XML 标签中输出，无任何额外元素：\n\n<prompt_en>Your precisely crafted English video prompt here.</prompt_en>",
+        "imageUrls": "={{ $json.firstFrame }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -688,
+        480
+      ],
+      "id": "414d92f9-f1ed-42ca-9fc0-ade29752292e",
+      "name": "视频提示词-Fal",
+      "retryOnFail": true,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "T7KY6yFDTVGpooAN",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5f0c5adf-e20b-41b1-a79e-08fbbdbc3dda",
+              "name": "video",
+              "value": "={{ $json.response }}",
+              "type": "string"
+            },
+            {
+              "id": "0ac697a6-84a6-4beb-a564-7b5c78447bfc",
+              "name": "duration",
+              "value": "={{ Math.round(+$('路由').item.json.duration) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        144,
+        1088
+      ],
+      "id": "2491e492-1f3c-4a59-a0de-eb6ae732c280",
+      "name": "设置参数-NCA"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/image/convert/video",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"image_url\":\"{{ $json.firstFrame }}\",\n    \"length\":{{ Math.round(+$json.duration) }},\n    \"frame_rate\": 25,\n    \"zoom_speed\": 2\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -80,
+        1088
+      ],
+      "id": "88aca20b-9e33-4df9-98d7-61954246b336",
+      "name": "图片转视频"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "text": "=# **角色 (Role)：** 顶级AI视频生成提示词专家 & 视觉叙事导演\n\n你是一名顶级视觉叙事导演与AI视频提示词专家。你的任务是深入解读用户提供的静态图片和旁白，以精准构思并创作高度优化的英文视频提示词。这些提示词专为最新的AI图片生成视频模型（如 Bytedance Seedance 1.0, OpenAI Sora, Runway, Pika Labs, Kling等）设计，用于指导生成3-12秒的动态流畅视频。你拥有敏锐的视觉分析能力、精湛的镜头语言技巧和丰富的AI视频生成经验，能够将静态图片转化为具有强烈视觉冲击力和情感感染力的动态视频。\n\n## **核心目标 (Core Objectives)**\n\n输出精炼且高质量的英文视频提示词，以精准控制**主体动作、场景变化和镜头运动**，确保视频流畅自然，与输入图片的视觉风格完美融合，避免任何不自然的扭曲或突兀的默认运镜（如无意义的拉近）。通过专业的动态设计和镜头语言，在2-12秒内创造出引人入胜的视觉叙事体验。\n\n## **信息输入 (Input Information)**\n\n- **首帧图片 (Starting Frame Image):**\n  `[提供首帧图片，作为视频动态生成的起始画面]`\n\n- **当前分镜旁白内容 (Current Scene Narration Content):**\n  `{{ $json.narration }}`\n  \n- **当前分镜序号 (Current Scene SequenceID):**\n  `{{ $json.seq }}`\n\n- **完整视频大纲、旁白、生成图片的提示词 (Complete Video Outline):**\n  `{{ $('分镜大纲').last().json.content.parts[0].text }}`\n\n\n## **专业制作流程 (Professional Production Workflow)**\n\n### **第一步：整体基调分析 (Overall Tone Analysis)**\n深度解析完整视频大纲，确定整个视频的基调氛围 (e.g., `Suspenseful`, `Heartwarming`, `Epic`) 和视觉风格 (e.g., `Photorealistic`, `Anime`, `Cyberpunk`)，为当前分镜的视觉设计奠定统一的风格基础。\n\n### **第二步：首帧图片深度解析 (Deep Frame Analysis)**\n基于生成图片的提示词和整体基调，全面解构首帧图片的视觉元素、主体情绪和动态潜力。细致分析当前分镜旁白内容的情感内核与节奏，确定最具传播力的动态呈现策略。\n\n### **第三步：动态发展设计 (Dynamic Development Design)**\n基于前两步的分析，精心设计最具冲击力和叙事价值的动态方案。**此步骤的核心是决策采用何种动态类型来最好地服务于旁白内容。**\n\n-   **决策标准 1：表现内在情绪与心理活动 (Representing Internal Emotions & Psychology)**\n    -   当旁白聚焦于角色的内心世界、情绪特写或思考时 (e.g., narration is `\"He felt a wave of despair\"`), **优先选择【主体微动作】+【静态镜头】 (Prioritize [Subject Micro-motion] + [Static Shot])**。\n\n-   **决策标准 2：表现外部动作与环境互动 (Representing External Actions & Interaction)**\n    -   当旁白描述角色正在进行的**普通**动作或与环境的互动时 (e.g., narration is `\"He quickly moved through the crowded street\"`), **优先选择【镜头运动】或【场景运动】 (Prioritize [Camera Motion] or [Scene Motion])**。\n\n-   **决策标准 3：处理抽象或高潮事件 (Handling Abstract or Culminating Events)**\n    -   当旁白描述一个**结果性、总结性或情感上极其沉重**的事件时 (e.g., a death, a major decision, a historical fact like `\"he pulled the trigger\"`), **必须避免直接、字面地展示该动作。** 此时应**回归“决策标准1”**，聚焦于事件发生**前**的静态情绪、微动作和环境氛围，用暗示和克制来营造叙事张力。\n\n### **第四步：提示词元素构建 (Prompt Elements Construction)**\n按照以下优先级和词汇库，逐步构建精炼的英文提示词：\n\n#### **主体运动 (Subject Motion) - 优先级1**\n-   **微动作优先原则 (Micro-motion First)**：对于情绪表达，优先使用细微、克制的动作，而非夸张的位移。这能创造出更真实、更高级的动态感。\n    -   **微动作词汇库**: `his eyes narrow slightly`, `the corner of his mouth twitches`, `his fist clenches slowly`, `a subtle frown appears`, `he breathes heavily, chest rising and falling`, `a single tear rolls down his cheek`.\n-   **暗示性动作原则 (Principle of Implied Action)**：对于符合“决策标准3”的场景，使用暗示性动作来取代直接动作。关注角色的内心挣扎，而不是物理行为。\n    -   **暗示性动作词汇库**: `his hand holding the object trembles`, `he lowers his gaze`, `his expression shifts from resolve to profound sadness`, `he takes a shaky breath`.\n-   **常规动作**: 清晰描述主体的姿态或行为变化，如 `the man turns his head to the left`, `she raises her hand`.\n\n#### **场景运动 (Scene Motion) - 优先级2**\n-   明确描述环境中元素的动态变化，作为主体动作的补充。\n    -   **示例**: `rain streaks down the window pane`, `dust particles float in the sunbeam`, `leaves rustle in the wind behind him`.\n\n#### **镜头运动 (Camera Motion) - 优先级3 (核心优化)**\n-   **明确运镜指令**：主动控制镜头，避免AI模型的默认行为。**默认情况下，优先考虑使用静态镜头，除非旁白或场景强烈暗示需要移动。这是避免不必要缩放的关键。**\n-   **运镜词汇表 (Camera Vocabulary):**\n    -   **静态镜头 (Static Shot)**: `static shot`, `fixed camera`, `tripod shot` (用于强调情绪、对话或稳定严肃的氛围)。\n    -   **平移/摇镜 (Pan/Tilt)**: `slow pan left/right`, `tilt up/down` (用于展示环境或跟随动作)。\n    -   **推拉/移近 (Dolly/Truck)**: `subtle dolly in/out` (模拟摄影机物理靠近/远离，比zoom更具空间感), `truck left/right` (摄影机水平移动)。\n    -   **特殊运镜 (Special Shots)**: `handheld camera effect` (营造纪实/紧张感), `orbit shot` (围绕主体旋转), `rack focus` (焦点在前后景间切换)。\n\n#### **风格描述 (Style Descriptors) - 优先级4**\n-   添加风格化词语来强化整体氛围和质感。\n-   **示例**: `cinematic`, `hyperrealistic`, `dark comic book style`, `dramatic lighting`, `slow motion`.\n\n### **第五步：最佳实践整合验证 (Best Practices Integration & Validation)**\n-   **精炼直接检查**：确保使用英文、语言简洁明了。\n-   **聚焦动态验证**：检查是否明确描述了动作、变化或运镜。\n-   **镜头选择合理性核查**：检查镜头运动是否服务于叙事，还是无意义的默认动作？是否已优先考虑静态镜头？\n-   **叙事与情感适切性检查 (Narrative & Emotional Appropriateness Check)**:\n    -   **提问1**: 生成的动作是否扭曲或简化了旁白的深层含义？ (Does the action distort or oversimplify the narration's deeper meaning?)\n    -   **提问2**: 动作是否尊重了主题的严肃性，而非将其戏剧化？ (Does the action respect the subject's gravity, or does it turn it into cheap drama?)\n    -   **提问3**: 动作是否具有对观众的攻击性，从而破坏了叙事距离？ (Is the action confrontational towards the viewer, breaking the narrative distance?)\n-   **简化句法优化**：避免长句和复杂的从句结构。\n-   **非对话指令核查**：直接陈述所需动态，避免口语化请求。\n\n## **输出规范 (Final Output Specifications)**\n**输出要求：**\n-   **字数控制**：提示词严格限制在100词以内，确保简洁高效。\n-   **完整性保证**：确保提示词独立完整，可直接应用于顶级AI视频生成模型。\n-   **表达质量**：描述精准凝练，富有强烈的视觉冲击力和表现张力。\n-   **安全合规性**：提示词必须严格遵循Liblib AI安全政策，确保内容健康正面，适合全年龄段观看。\n\n请将精心设计的英文视频提示词严格置于 XML 标签中输出，无任何额外元素：\n\n<prompt_en>Your precisely crafted English video prompt here.</prompt_en>",
+        "imageUrls": "={{ $json.firstFrame }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -416,
+        768
+      ],
+      "id": "ac78f9e9-87b6-473c-9834-2693f0cc189b",
+      "name": "视频提示词-ComfyUI",
+      "retryOnFail": true,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "hKbyBjJv3YkcGmeG",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "success",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "a942850f-5761-43d6-9715-c5a18dcee5ec"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "成功"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "00760524-b68e-42db-8244-506708e1df73",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "RUNNING",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "未完成"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f7736481-ebf7-467b-8a9c-d823946e3c59",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "QUEUED",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "排队"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7dae0dc3-a7ba-4899-9f47-f2800eac3829",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "ERROR",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "失败"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": 3
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        448,
+        784
+      ],
+      "id": "746fce76-8977-4dec-b828-be704f721e0a",
+      "name": "判断-ComfyUI"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -688,
+        768
+      ],
+      "id": "7ad92678-e2a1-4dde-891d-d6b7115e5fd6",
+      "name": "等待30秒",
+      "webhookId": "d9a2571c-a7a5-4224-85af-3cf2be1ba361"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('设置参数-综合').first().json['NCA url'] }}/v1/media/metadata",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('设置参数-综合').first().json['NCA api key'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"media_url\":\"{{ $('获取视频-ComfyUI').item.json.data[0].fileUrl }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        704,
+        768
+      ],
+      "id": "5d900df6-e4e8-4122-add0-d5d3a7645220",
+      "name": "视频metadata",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// --- 从之前的节点获取数据 ---\nconst audioDur = parseFloat($('循环-分镜').item.json.duration);\nconst videoDur = parseFloat($('汇聚').item.json.duration);\n\nif (isNaN(audioDur) || isNaN(videoDur) || videoDur === 0) {\n  throw new Error('获取时长失败或视频时长为零，无法计算。');\n}\n\n// --- 执行您的清晰计算逻辑 ---\nconst frameRate = 25;\n\n// 1. 计算出能完整覆盖音频所需的、由整数帧构成的“目标时长”\n//    这是我们统一视频和音频的“黄金标准”\nconst requiredFrames = Math.ceil(audioDur * frameRate);\nconst targetDuration = requiredFrames / frameRate; // e.g., 62 / 25 = 2.48 秒\n\n// 2. 计算视频变速所需的比率\nconst ratio = targetDuration / videoDur;\n\n// 3. 构建终极的、逻辑清晰的 filter 字符串\n//    - 视频任务：使用 setpts + fps 将视频流精确地拉伸到 targetDuration\n//    - 音频任务：使用 apad 滤镜的 whole_dur 参数，将音频流用静音补齐到完全相同的 targetDuration\nconst filterString = `[0:v]setpts=PTS*${ratio.toFixed(8)},fps=${frameRate}[v_out];[1:a]apad=whole_dur=${targetDuration.toFixed(8)},asetpts=PTS-STARTPTS[a_out]`;\n\n// --- 返回结果 ---\nreturn [{\n  json: {\n    filterString: filterString\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1856,
+        768
+      ],
+      "id": "02183284-44ed-47dd-b81e-e0c2c113cc90",
+      "name": "设置-filterString"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.runninghub.cn/task/openapi/create",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Host",
+              "value": "www.runninghub.cn"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"apiKey\": \"{{ $('设置参数-综合').first().json['Runninghub api key'] }}\",\n  \"workflowId\": \"1978319996189302785\",\n  \"instanceType\": \"plus\",\n  \"nodeInfoList\": [\n    {\n      \"nodeId\": \"6\",\n      \"fieldName\": \"text\",\n      \"fieldValue\": {{ JSON.stringify($('遍历-图片').item.json['图片提示词'] || $('遍历-图片').item.json['图片提示詞']) }}\n    },\n    {\n      \"nodeId\": \"5\",\n      \"fieldName\": \"width\",\n      \"fieldValue\": 864\n    },\n    {\n      \"nodeId\": \"5\",\n      \"fieldName\": \"height\",\n      \"fieldValue\": 1536\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -992,
+        1520
+      ],
+      "id": "901cff13-9aa7-4bb5-93a0-b7ac5ebe068a",
+      "name": "ComfyUI文生图",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -736,
+        1520
+      ],
+      "id": "1b47db97-0230-4da1-bc5c-c52952805eb9",
+      "name": "等待-ComfyUI文生图",
+      "webhookId": "b9eb68f7-fed0-4ec4-8926-13e2c5965021"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.runninghub.cn/task/openapi/outputs",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Host",
+              "value": "www.runninghub.cn"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "apiKey",
+              "value": "={{ $('设置参数-综合').first().json['Runninghub api key'] }}"
+            },
+            {
+              "name": "taskId",
+              "value": "={{ $('ComfyUI文生图').last().json.data.taskId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -528,
+        1520
+      ],
+      "id": "5bb586c1-ba4e-4750-acaf-85f91e4f4994",
+      "name": "获取图片-ComfyUI",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "success",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "a942850f-5761-43d6-9715-c5a18dcee5ec"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "成功"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "00760524-b68e-42db-8244-506708e1df73",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "RUNNING",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "未完成"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f7736481-ebf7-467b-8a9c-d823946e3c59",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "QUEUED",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "排队"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7dae0dc3-a7ba-4899-9f47-f2800eac3829",
+                    "leftValue": "={{ $json.msg }}",
+                    "rightValue": "ERROR",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "失败"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": 3
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -336,
+        1536
+      ],
+      "id": "6abdf402-8a90-49a8-9266-ae8a3f256060",
+      "name": "判断-ComfyUI文生图"
+    }
+  ],
+  "pinData": {
+    "需求输入-视频": [
+      {
+        "json": {
+          "视频文案": "I am Chad, the military tough guy.\r\nI wake up at 5 a.m., but not for school.\r\nThirty push-ups, thirty pull-ups, thirty squats while blasting Metallica.\r\nFollowed by a cold shower.\r\nAfter, I put on my camo pants and bomber jacket with precision, like I'm in the military.\r\nIn reality, I'm getting ready for school.\r\nFor breakfast, I eat an MRE, like I'm deployed.\r\nMy mom just sighs and says, \"You've got dog tags, but you can't even walk the dog.\"\r\nBy 8 a.m., I'm in school, giving dirty looks to anyone who walks past.\r\nI treat the hallway like a battlefield, bumping into people left and right.\r\nI think people fear me, but they all just laugh at me.\r\nIn class, I don't talk, unless anyone dares to make fun of my outfit.\r\nThen, it's a 10-minute rant about tradition and discipline.\r\nAt lunch, I go to the vending machine and buy a pack of beef jerky.\r\nAfter the machine gives me change, I salute it as if to say thank you.\r\nPeople just look at me weirdly and laugh.\r\nAfter school, I'm running laps in the car park to try and impress the girls.\r\nWhen I go up to my crush to try and speak to her, my mom pulls up in a minivan and yells, \"Get in, my baby!\"\r\nShe just laughs at me and tells me to get lost.\r\nWhen I get home, I post a selfie in the mirror saying, \"Pain is temporary, pride is forever.\"\r\nAnd every night, I go to sleep, dreaming that I'm an army general leading a boot camp.\r\nBut I wake up to be the same guy acting every day.",
+          "参考视频": "https://storage.googleapis.com/autoaitt/ai/MeetChad.mp4",
+          "分镜数量": 25,
+          "视频语言": "英语",
+          "视频平台": "ComfyUI",
+          "submittedAt": "2025-10-15T13:02:41.039+08:00",
+          "formMode": "test"
+        }
+      }
+    ],
+    "处理合并": [
+      {
+        "json": {
+          "clips": [
+            {
+              "seq": 1,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00001_dlkiv_1760618216.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618152/kaotUXYwQqzzufBO38848-voice1.mp3",
+              "duration": 1.933063,
+              "narration": "I am Chad, the military tough guy."
+            },
+            {
+              "seq": 2,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00002_axzrx_1760618260.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618238/kaotUXYwQqzzufBO38848-voice2.mp3",
+              "duration": 2.638313,
+              "narration": "I wake up at 5 a.m., but not for school."
+            },
+            {
+              "seq": 3,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00003_jyodm_1760618325.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618303/kaotUXYwQqzzufBO38848-voice3.mp3",
+              "duration": 3.892188,
+              "narration": "Thirty push-ups, thirty pull-ups, thirty squats while blasting Metallica."
+            },
+            {
+              "seq": 4,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00004_lpoxp_1760618388.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618367/kaotUXYwQqzzufBO38848-voice4.mp3",
+              "duration": 1.488938,
+              "narration": "Followed by a cold shower."
+            },
+            {
+              "seq": 5,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00005_ppppd_1760618453.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618430/kaotUXYwQqzzufBO38848-voice5.mp3",
+              "duration": 3.892188,
+              "narration": "After, I put on my camo pants and bomber jacket with precision,"
+            },
+            {
+              "seq": 6,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00006_qhxds_1760618515.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618494/kaotUXYwQqzzufBO38848-voice6.mp3",
+              "duration": 1.28,
+              "narration": "like I'm in the military."
+            },
+            {
+              "seq": 7,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00007_zvphg_1760618578.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618556/kaotUXYwQqzzufBO38848-voice7.mp3",
+              "duration": 1.98525,
+              "narration": "In reality, I'm getting ready for school."
+            },
+            {
+              "seq": 8,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00008_yrnxd_1760618642.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618620/kaotUXYwQqzzufBO38848-voice8.mp3",
+              "duration": 3.5265,
+              "narration": "For breakfast, I eat an MRE, like I'm deployed."
+            },
+            {
+              "seq": 9,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00009_vbrei_1760618705.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618684/kaotUXYwQqzzufBO38848-voice9.mp3",
+              "duration": 1.854688,
+              "narration": "My mom just sighs and says,"
+            },
+            {
+              "seq": 10,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00010_svdlp_1760618770.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618748/kaotUXYwQqzzufBO38848-voice10.mp3",
+              "duration": 2.768938,
+              "narration": "\"You've got dog tags, but you can't even walk the dog.\""
+            },
+            {
+              "seq": 11,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00011_cefzz_1760618833.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618812/kaotUXYwQqzzufBO38848-voice11.mp3",
+              "duration": 3.944438,
+              "narration": "By 8 a.m., I'm in school, giving dirty looks to anyone who walks past."
+            },
+            {
+              "seq": 12,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00012_edprz_1760618898.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618876/kaotUXYwQqzzufBO38848-voice12.mp3",
+              "duration": 3.996688,
+              "narration": "I treat the hallway like a battlefield, bumping into people left and right."
+            },
+            {
+              "seq": 13,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00013_clhay_1760618962.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760618940/kaotUXYwQqzzufBO38848-voice13.mp3",
+              "duration": 1.384438,
+              "narration": "I think people fear me,"
+            },
+            {
+              "seq": 14,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00014_lrezp_1760619027.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619004/kaotUXYwQqzzufBO38848-voice14.mp3",
+              "duration": 1.906938,
+              "narration": "but they all just laugh at me."
+            },
+            {
+              "seq": 15,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00015_najmc_1760619092.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619069/kaotUXYwQqzzufBO38848-voice15.mp3",
+              "duration": 1.488938,
+              "narration": "In class, I don't talk,"
+            },
+            {
+              "seq": 16,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00016_clypy_1760619155.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619133/kaotUXYwQqzzufBO38848-voice16.mp3",
+              "duration": 2.324875,
+              "narration": "unless anyone dares to make fun of my outfit."
+            },
+            {
+              "seq": 17,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00017_ytjpa_1760619218.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619196/kaotUXYwQqzzufBO38848-voice17.mp3",
+              "duration": 3.186938,
+              "narration": "Then, it's a 10-minute rant about tradition and discipline."
+            },
+            {
+              "seq": 18,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00018_becgp_1760619282.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619260/kaotUXYwQqzzufBO38848-voice18.mp3",
+              "duration": 3.604875,
+              "narration": "At lunch, I go to the vending machine and buy a pack of beef jerky."
+            },
+            {
+              "seq": 19,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00019_eeifx_1760619345.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619324/kaotUXYwQqzzufBO38848-voice19.mp3",
+              "duration": 4.127313,
+              "narration": "After the machine gives me change, I salute it as if to say thank you."
+            },
+            {
+              "seq": 20,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00020_fzlgj_1760619408.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619387/kaotUXYwQqzzufBO38848-voice20.mp3",
+              "duration": 1.98525,
+              "narration": "People just look at me weirdly and laugh."
+            },
+            {
+              "seq": 21,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00021_ppzxt_1760619472.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619450/kaotUXYwQqzzufBO38848-voice21.mp3",
+              "duration": 4.022813,
+              "narration": "After school, I'm running laps in the car park to try and impress the girls."
+            },
+            {
+              "seq": 22,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00022_xghiu_1760619538.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619515/kaotUXYwQqzzufBO38848-voice22.mp3",
+              "duration": 6.635063,
+              "narration": "When I go up to my crush to try and speak to her, my mom pulls up in a minivan and yells, \"Get in, my baby!\""
+            },
+            {
+              "seq": 23,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00023_jkqis_1760619602.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619580/kaotUXYwQqzzufBO38848-voice23.mp3",
+              "duration": 2.586063,
+              "narration": "She just laughs at me and tells me to get lost."
+            },
+            {
+              "seq": 24,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00024_gfycz_1760619666.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619643/kaotUXYwQqzzufBO38848-voice24.mp3",
+              "duration": 5.276688,
+              "narration": "When I get home, I post a selfie in the mirror saying, \"Pain is temporary, pride is forever.\""
+            },
+            {
+              "seq": 25,
+              "firstFrame": "https://rh-images.xiaoyaoyou.com/a30255e6326bc8b0c60b6b3232e12052/output/ComfyUI_00025_vtril_1760619730.png",
+              "lastFrame": "",
+              "audioUrl": "http://res.cloudinary.com/dbcgi9fkn/raw/upload/v1760619708/kaotUXYwQqzzufBO38848-voice25.mp3",
+              "duration": 7.10525,
+              "narration": "And every night, I go to sleep, dreaming that I'm an army general leading a boot camp. But I wake up to be the same guy acting every day."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "connections": {
+    "需求输入-视频": {
+      "main": [
+        [
+          {
+            "node": "设置参数-综合",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-综合": {
+      "main": [
+        [
+          {
+            "node": "分镜大纲",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-视频网址": {
+      "main": [
+        [
+          {
+            "node": "循环-分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "分镜大纲": {
+      "main": [
+        [
+          {
+            "node": "设置参数-提取分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-提取分镜": {
+      "main": [
+        [
+          {
+            "node": "遍历-图片",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "上传 mp3": {
+      "main": [
+        [
+          {
+            "node": "声音时长",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "声音生成",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "声音生成": {
+      "main": [
+        [
+          {
+            "node": "上传 mp3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "声音时长": {
+      "main": [
+        [
+          {
+            "node": "ComfyUI文生图",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "声音视频合成": {
+      "main": [
+        [
+          {
+            "node": "设置参数-视频网址",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "循环-分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频声音比值": {
+      "main": [
+        [
+          {
+            "node": "设置-filterString",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "上传 Cloudinary-完整": {
+      "main": [
+        [
+          {
+            "node": "保存视频",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "聚合": {
+      "main": [
+        [
+          {
+            "node": "视频网址处理",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "配乐合成-裁剪": {
+      "main": [
+        [
+          {
+            "node": "上传 Cloudinary-完整",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数 -保存内容": {
+      "main": [
+        [
+          {
+            "node": "循环-图片",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "处理合并": {
+      "main": [
+        [
+          {
+            "node": "遍历-分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "遍历-图片": {
+      "main": [
+        [
+          {
+            "node": "循环-图片",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "遍历-分镜": {
+      "main": [
+        [
+          {
+            "node": "循环-分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "循环-分镜": {
+      "main": [
+        [
+          {
+            "node": "聚合",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "路由",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "循环-图片": {
+      "main": [
+        [
+          {
+            "node": "处理合并",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "声音生成",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "等待-Fal": {
+      "main": [
+        [
+          {
+            "node": "获取视频-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "获取视频-Fal": {
+      "main": [
+        [
+          {
+            "node": "判断-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "判断-Fal": {
+      "main": [
+        [
+          {
+            "node": "设置参数-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "保存视频": {
+      "main": [
+        [
+          {
+            "node": "返回数据-正常",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "等待-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "获取视频-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "判断-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "等待-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "获取视频-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "汇聚": {
+      "main": [
+        [
+          {
+            "node": "视频声音比值",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "路由": {
+      "main": [
+        [
+          {
+            "node": "视频提示词-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待30秒",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "图片转视频",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-Fal": {
+      "main": [
+        [
+          {
+            "node": "汇聚",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "汇聚",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Fal": {
+      "main": [
+        [
+          {
+            "node": "等待-Fal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频网址处理": {
+      "main": [
+        [
+          {
+            "node": "视频拼接",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频拼接": {
+      "main": [
+        [
+          {
+            "node": "状态查询",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "状态判断": {
+      "main": [
+        [
+          {
+            "node": "配乐合成-裁剪",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "状态查询": {
+      "main": [
+        [
+          {
+            "node": "状态判断",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "等待": {
+      "main": [
+        [
+          {
+            "node": "状态查询",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频提示词-Fal": {
+      "main": [
+        [
+          {
+            "node": "Fal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置参数-NCA": {
+      "main": [
+        [
+          {
+            "node": "汇聚",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "图片转视频": {
+      "main": [
+        [
+          {
+            "node": "设置参数-NCA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频提示词-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "判断-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "视频metadata",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "循环-分镜",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "等待30秒": {
+      "main": [
+        [
+          {
+            "node": "视频提示词-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "视频metadata": {
+      "main": [
+        [
+          {
+            "node": "设置参数-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "设置-filterString": {
+      "main": [
+        [
+          {
+            "node": "声音视频合成",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ComfyUI文生图": {
+      "main": [
+        [
+          {
+            "node": "等待-ComfyUI文生图",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "等待-ComfyUI文生图": {
+      "main": [
+        [
+          {
+            "node": "获取图片-ComfyUI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "获取图片-ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "判断-ComfyUI文生图",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "判断-ComfyUI文生图": {
+      "main": [
+        [
+          {
+            "node": "设置参数 -保存内容",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待-ComfyUI文生图",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "等待-ComfyUI文生图",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "循环-图片",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e6256dca-daa6-4861-af52-503a01e2d25d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "88a2202878d97d14dab10d7f99f4ab3b0f9be04457a03e459a2fab1f1bdd892a"
+  },
+  "id": "kaotUXYwQqzzufBO",
+  "tags": []
+}
