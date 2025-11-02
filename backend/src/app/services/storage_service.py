@@ -130,16 +130,32 @@ class StorageService:
             raise ValueError("file path cannot be empty")
 
         value = value.strip().replace("\\", "/")
+
+        if value.startswith(_API_STORAGE_PREFIX):
+            return value
+
         parsed = urlparse(value)
         if parsed.scheme in {"http", "https"}:
             # Require callers to provide relative API path to avoid host lock-in
-            value = parsed.path
+            value = parsed.path or ""
+            if value.startswith(_API_STORAGE_PREFIX):
+                return value
 
         if not value:
             raise ValueError("file path cannot be empty")
 
-        if value.startswith(_API_STORAGE_PREFIX):
-            return value
+        path_candidate = Path(value)
+        if path_candidate.is_absolute():
+            try:
+                relative = path_candidate.resolve().relative_to(self._base_path).as_posix()
+            except ValueError as exc:
+                raise ValueError("absolute path is outside of storage base path") from exc
+            return (
+                _API_STORAGE_PREFIX.rstrip("/")
+                if not relative
+                else f"{_API_STORAGE_PREFIX}{relative}"
+            )
+
         if value.startswith("/"):
             value = value[1:]
         if value.startswith(_API_STORAGE_PREFIX.lstrip("/")):
