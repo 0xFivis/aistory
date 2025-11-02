@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     API_HOST: Optional[str] = Field(None, env="API_HOST")
     API_PORT: Optional[int] = Field(None, env="API_PORT")
     APP_TIMEZONE: Optional[str] = Field(None, env="APP_TIMEZONE")
+    CORS_ALLOW_ORIGINS: Optional[str] = Field(None, env="CORS_ALLOW_ORIGINS")
 
     # Celery & Redis settings
     REDIS_URL: Optional[str] = Field(None, env="REDIS_URL")
@@ -270,6 +271,18 @@ class Settings(BaseSettings):
             if nested:
                 result[service.lower()] = nested
         return result
+
+    @property
+    def cors_allow_origins(self) -> List[str]:
+        if self.CORS_ALLOW_ORIGINS:
+            values = [item.strip() for item in self.CORS_ALLOW_ORIGINS.split(',')]
+            origins = [value for value in values if value]
+            if origins:
+                return origins
+        return [
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+        ]
 
 @lru_cache()
 def get_settings() -> Settings:

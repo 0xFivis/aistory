@@ -24,6 +24,14 @@ apply_timezone_settings()
 app = FastAPI(title='Aistory Backend', docs_url=None, redoc_url=None, openapi_version='3.0.3')
 app.openapi_version = '3.0.3'
 
+settings = get_settings()
+cors_allow_origins = list(settings.cors_allow_origins)
+
+if settings.API_HOST and settings.API_PORT and settings.API_HOST not in ('0.0.0.0', '::'):
+    inferred_origin = f"http://{settings.API_HOST}:{settings.API_PORT}"
+    if inferred_origin not in cors_allow_origins:
+        cors_allow_origins.append(inferred_origin)
+
 BASE_DIR = Path(__file__).resolve().parent
 REDOC_STATIC_DIR = BASE_DIR / 'static' / 'redoc'
 
@@ -35,7 +43,7 @@ else:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['http://localhost:5173', 'http://127.0.0.1:5173'],
+    allow_origins=cors_allow_origins,
     allow_credentials=True,
     allow_methods=['*'],
     allow_headers=['*'],
